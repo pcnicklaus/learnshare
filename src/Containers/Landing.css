@@ -1,0 +1,127 @@
+.landing {
+    height: 100vh;
+    /* margin-top: -3.1rem; */
+}
+.landing__header {
+    position: relative;
+    height: 100%;
+}
+.landing__header__content {
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    z-index: 10;
+}
+
+.landing__header__content__learn {
+    
+}
+.landing__header__content__tobe {
+    display: inline-block;
+}
+
+.landing__header__content__animation {
+    display: inline-block;
+    position: absolute;
+    margin-left: 5px;
+    width: 20rem;
+}
+.landing__header__content__animation__nurse,
+.landing__header__content__animation__bipolar,
+.landing__header__content__animation__brother,
+.landing__header__content__animation__ceo,
+.landing__header__content__animation__unfulfilled,
+.landing__header__content__animation__powerful,
+.landing__header__content__animation__you {
+    position: absolute;
+    left: 0;
+    top:0;
+    color: var(--color-red-primary-light);
+    opacity: 0;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    45% { opacity: 1; }
+    100% { opacity: 0%; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+.landing__header__content__animation__nurse {
+    animation: fadeInOut 5s ease-in-out 1s;
+}
+.landing__header__content__animation__bipolar {
+    animation: fadeInOut 5s ease-in-out 5s;
+}
+.landing__header__content__animation__brother {
+    animation: fadeInOut 5s ease-in-out 10s;
+}
+.landing__header__content__animation__ceo {
+    animation: fadeInOut 5s ease-in-out 15s;
+}
+.landing__header__content__animation__unfulfilled {
+    animation: fadeInOut 5s ease-in-out 20s ;
+}
+.landing__header__content__animation__powerful {
+    animation: fadeInOut 5s ease-in-out 25s ;
+}
+.landing__header__content__animation__you {
+    animation: fadeIn 5s ease-in 30s;
+    animation-fill-mode: forwards;  
+
+}
+
+.landing__header__content__buttons {
+    position: absolute;
+    bottom: -8rem;
+    display: flex;
+}
+.landing__header__button__learn, .landing__header__button__share {
+    color: var(--color-white);
+    font-size: 2.5rem;
+    box-shadow: var(--shadow-light);
+    text-decoration: none;
+    cursor: pointer;
+    width: 12rem;
+    text-align: center;
+}
+.landing__header__button__learn:hover, .landing__header__button__share:hover {
+    color: var(--color-red-primary-light);
+    font-weight: 700;
+}
+
+.landing__header__button__learn > p {
+    background-color: var(--color-blue-primary-light);
+    padding: 1rem 2rem;
+}
+.landing__header__button__learn > p:hover {
+    /* background-color: var(--color-blue-primary-light);
+    padding: 1rem 2rem; */
+}
+.landing__header__button__share > p {
+    background-color: var(--color-blue-primary-dark);
+    padding: 1rem 2rem;
+}
+
+.background-video__landing { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ /* background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat; */
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+
+/* animations */
+
+ 
