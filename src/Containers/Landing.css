@@ -94,7 +94,7 @@
 }
 
 .landing__header__button__learn > p {
-    background-color: var(--color-blue-primary-light);
+    background-color: var(--color-grey-dark-3);
     padding: 1rem 2rem;
 }
 .landing__header__button__learn > p:hover {
@@ -102,7 +102,7 @@
     padding: 1rem 2rem; */
 }
 .landing__header__button__share > p {
-    background-color: var(--color-blue-primary-dark);
+    background-color: var(--black-3);
     padding: 1rem 2rem;
 }
 
@@ -132,26 +132,32 @@
     align-items: center;
 }
 .landing__content__why__title {
-    flex: 0 0 30%;
-    height: 20rem;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     padding-right: 1rem;
     background-color: var(--color-grey-dark-2);
 }   
+.landing__content__why__title > h2{
+   color: var(--color-grey-2);
+   font-size: 7rem;
+   padding-top: 13rem;
+}   
 .landing__content__why__body {
-    flex: 0 0 40%;
-    height: 20rem;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     padding-left: 1rem;
-    background-color: var(--color-grey-3);
+    background-color: var(--black-3);
 
 }
 .landing__content__why__body__list {
     list-style: none;
-    
+    font-size: 2.4rem;
+    padding-top: 1rem;
+    color: var(--grey-1);
 }
 .landing__content__why__body__list-item {
 

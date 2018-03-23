@@ -1,6 +1,12 @@
 /* https://www.webpagefx.com/web-design/hex-to-rgb/ */
 :root {
-  
+  /* cmyks
+  grey 4: 186, 185, 187     grey-5  144, 143, 146
+  black: 2, 2, 3            gre7 6 46, 46, 46
+  black  13, 13, 13
+  white: 241, 241, 241       231, 231, 231
+
+   */
   --color-red-primary: #rgba(230,57,70, 1);
   --color-red-primary-light: #EF8189;
   --color-red-primary-light-2: #F5B7BB;
@@ -9,7 +15,33 @@
   --color-grey-1: #DCE4D9;
   --color-grey-2: #B0B6AE;
   --color-grey-3: rgba(154,160,152, 1);
-  
+  --grey-0: #9A9A9A;
+  --grey-1: #BAB9BB;
+  --grey-2: #908F92;
+  --grey-3: #575559;
+  --grey-4: #909090;
+  --grey-5: #2E2E2E;
+  --grey-6: #383838;
+  --grey-7: #898988;
+  --grey-8: #282727;
+  --grey-9: #7E7E7E;
+  --grey-10: #A1A1A0;
+
+  --black-1: #020203;
+  --black-2: #0D0D0E;
+  --black-3: #0E0B11;
+  --black-4: #0E0B11;
+
+  --white-1: #F1F1F1;
+  --white-2: #FCFCFC;
+  --white-3: #FFFFFF;
+  --white-4: #E7E7E7;
+
+  --green-0: #71AF7C;
+  --green-1: #82B18A;
+
+
+
   --color-grey-dark-1: #2C2E2C;
   --color-grey-dark-2: #424541;
   --color-grey-dark-3: #585B57;

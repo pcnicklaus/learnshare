@@ -59,7 +59,7 @@ class Share extends Component {
                 <div className="shareForm__content">
 
                     <div className="shareForm__title">
-                        <h1>New Share</h1>
+                        <h1>share</h1>
                         {/* <p></p> */}
                     </div>
                     
@@ -143,7 +143,7 @@ class Share extends Component {
                                     this.props.router.push('/') } }
                                 
                             >
-                                <p>Cancel</p>
+                                <p>cancel</p>
                             
                             </button>
                             
@@ -153,7 +153,7 @@ class Share extends Component {
                                 disabled={ !this.isEnabled }
                                 onClick={ () => this.createNewVideo() }
                             >
-                                <p>Create</p>
+                                <p>create</p>
                             </button>
                         </div>
                         

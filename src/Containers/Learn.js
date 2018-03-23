@@ -79,7 +79,7 @@ class Learn extends Component {
             <section className="learn">
 
                 <div className="learn__title">
-                    <h1>Learn</h1>
+                    <h1>learn</h1>
 
                     <div className="learn__controls">
                         <form className="learn__controls__search-form" onSubmit={this.handleSubmit}>

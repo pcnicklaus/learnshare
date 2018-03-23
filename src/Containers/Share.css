@@ -45,8 +45,8 @@
     margin-bottom: 1rem;
 }
 .shareForm__title > h1 {
-    font-size: 6rem;
-    font-weight: 400;
+    font-size: 9rem;
+    font-weight: 700;
     position: relative;
 }
 
@@ -148,7 +148,10 @@
     color: var(--color-red-primary-light);
     /* font-weight: 700; */
 }
-
+.button__submit:hover {
+    color: var(--green-0);
+    /* font-weight: 700; */
+}
 .button__cancel {
     background-color: transparent;
     color: var(--color-grey-2);

@@ -48,7 +48,7 @@ class Landing extends Component {
                 <section className="landing__content">
                     <div className="landing__content__why">
                         <div className="landing__content__why__title">
-                            <h2>Our simple goals</h2>
+                            <h2>our purpose</h2>
                         </div>
                         <div className="landing__content__why__body">
                             <ul className="landing__content__why__body__list">
