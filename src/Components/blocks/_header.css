@@ -51,10 +51,10 @@
     text-decoration: none;
     display: flex;
     align-self: center;
-    color: var(--color-grey-3);
+    color: var(--color-blue-primary-dark);
 }
 .header__links__link:hover {
-    color: var(--color-white);
+    color: var(--color-blue-primary-light);
     /* background-color: rgba(154,160,152, .2); */
     /* padding: 1rem;
     margin: -1rem; */

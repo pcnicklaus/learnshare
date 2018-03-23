@@ -6,11 +6,13 @@ import './_header.css';
 const Header = () => {
     return (
         <nav className="header">
-            <div className="header__logo">
-                <p className="header__logo-l">l</p>
-                <p className="header__logo-slash">/</p>
-                <p className="header__logo-s">s</p>
-            </div>
+            <Link to={"/"}>
+                <div className="header__logo">
+                    <p className="header__logo-l">l</p>
+                    <p className="header__logo-slash">/</p>
+                    <p className="header__logo-s">s</p>
+                </div>
+            </Link>
             <div className="header__links">
                 <Link to={"learn"} className="header__links__link">
                     <p className="header__links__link__learn">learn</p>

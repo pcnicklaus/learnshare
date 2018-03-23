@@ -44,6 +44,27 @@ class Landing extends Component {
                         </video>
                     </div>
                 </section>
+
+                <section className="landing__content">
+                    <div className="landing__content__why">
+                        <div className="landing__content__why__title">
+                            <h2>Our simple goals</h2>
+                        </div>
+                        <div className="landing__content__why__body">
+                            <ul className="landing__content__why__body__list">
+                                <li className="landing__content__why__body__list-item">
+                                    encourage openness
+                                </li>
+                                <li className="landing__content__why__body__list-item">
+                                    celebrate honesty
+                                </li>
+                                <li className="landing__content__why__body__list-item">
+                                    build empathy & understanding
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
                 
             </div>
         );
