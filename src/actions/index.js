@@ -51,7 +51,7 @@ export function fetchVideos() {
     return function(dispatch) {
         axios.get(`${ROOT_URL}`)
             .then(response => {
-                console.log('response', response);
+                console.log('\n response \n', response);
                 dispatch({
                     type: FETCH_VIDEOS,
                     payload: response.data

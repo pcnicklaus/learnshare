@@ -10,11 +10,11 @@ import './Learn.css';
 
 
 class Learn extends Component {
-    
+
     state = {
         value: ''
     };
-    
+
     async componentDidMount() {
         await this.props.fetchVideos();
     }
@@ -22,7 +22,7 @@ class Learn extends Component {
     handleChange = (event) => {
         this.setState({ value: event.target.value });
     }
-  
+
     handleSubmit = (event) => {
         event.preventDefault();
 
@@ -31,10 +31,10 @@ class Learn extends Component {
 
     filter = (query="") => {
         console.log("in filter", query)
-        if(!query) { 
+        if(!query) {
             console.log('in !query')
-            this.setState({ videos: this.props.videos.videos }); 
-            return 
+            this.setState({ videos: this.props.videos.videos });
+            return
         }
         const selectedVideos = this.state.videos.filter( (video) => {
             console.log('selected video', video.what, typeof video.what)
@@ -52,16 +52,16 @@ class Learn extends Component {
             return (
                 <div className="video__box" key={ vid._id }>
                     <div className="video__wrapper">
-                        <ReactPlayer 
+                        <ReactPlayer
                             url={ vid.videoURL } className="video__player"
                             width="100%"
-                            height="100%" 
-                            
+                            height="100%"
+
                         />
                         <div className="video__wrapper__content">
-                            <h2 className="video__wrapper__content__title">{ vid.title } 
-                                <span className="video__wrapper__content__title__by">by </span> 
-                                author to come 
+                            <h2 className="video__wrapper__content__title">{ vid.title }
+                                <span className="video__wrapper__content__title__by">by </span>
+                                author to come
                             </h2>
                             <p className="video__wrapper__content__description">description to come</p>
                         </div>
@@ -85,25 +85,25 @@ class Learn extends Component {
                         <form className="learn__controls__search-form" onSubmit={this.handleSubmit}>
                             {/* <label className="learn__controls__search-form__label">
                                 Search: */}
-                                <input 
-                                    type="text" 
-                                    value={ this.state.value } onChange={ this.handleChange } 
+                                <input
+                                    type="text"
+                                    value={ this.state.value } onChange={ this.handleChange }
                                     className="learn__controls__search-form__label__input"
                                 />
                             {/* </label> */}
                             <input className="learn__controls__search-form__submit-button" type="submit" value=""/>
                         </form>
-                    </div>    
+                    </div>
                 </div>
 
-                
+
 
                 <div className="learn__container">
                     { this.renderVideos() }
                 </div>
             </section>
         )
-        
+
     }
 }
 
