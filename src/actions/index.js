@@ -3,7 +3,8 @@ import axios from 'axios';
 import { browserHistory } from 'react-router-3';
 import { FETCH_VIDEOS, CREATE_VIDEO } from './types';
 
-const ROOT_URL = 'http://localhost:3090';
+// const ROOT_URL = 'http://localhost:3090';
+const ROOT_URL = 'https://learn-share-server.herokuapp.com/';
 
 const videos = [
     {
