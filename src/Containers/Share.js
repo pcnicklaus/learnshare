@@ -14,7 +14,8 @@ class Share extends Component {
         name: '',
         description: '',
         videoURL: '',
-        keywords: ''
+        keywords: '',
+        isEnabled: false
     }
 
     isEnabled = this.state.title.length > 0 && this.state.videoURL.length > 0
@@ -148,10 +149,14 @@ class Share extends Component {
                             </button>
                             
                             <button
-                                type="button"
+                                type="submit"
                                 className="button__submit"
-                                disabled={ !this.isEnabled }
-                                onClick={ () => this.createNewVideo() }
+                                // disabled={ this.isEnabled }
+                                onClick={ () => {
+                                    console.log('here')
+                                        this.createNewVideo();
+                                    }
+                                }
                             >
                                 <p>create</p>
                             </button>

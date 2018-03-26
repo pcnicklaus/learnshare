@@ -81,6 +81,8 @@ export function filterVideos(query) {
 }
 
 export function createShare(formData, cb) {
+
+    console.log('formData', formData)
     
     return function(dispatch) {
 
@@ -89,6 +91,7 @@ export function createShare(formData, cb) {
         axios.post(`${ROOT_URL}/share`, formData)
             .then(response => {
 
+                console.log('response', response)
 
                 dispatch({
                     type: CREATE_VIDEO,

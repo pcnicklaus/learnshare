@@ -11,7 +11,7 @@ export default function( state = {}, action) {
         case CREATE_VIDEO:
             console.log('actipn.payload', action)
 
-            return { ...state, newVideo: action.payload }
+            return { ...state, videos: action.payload }
     }
 
     return state;
