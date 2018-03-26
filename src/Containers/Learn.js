@@ -61,9 +61,8 @@ class Learn extends Component {
                         <div className="video__wrapper__content">
                             <h2 className="video__wrapper__content__title">{ vid.title }
                                 <span className="video__wrapper__content__title__by">by </span>
-                                author to come
+                                vid.name
                             </h2>
-                            <p className="video__wrapper__content__description">description to come</p>
                         </div>
                     </div>
                 </div>
